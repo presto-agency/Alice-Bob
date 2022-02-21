@@ -8,11 +8,41 @@
 
 .container{
 	max-width: 1996px;
-	padding: 0px 20px;
+	padding: 0px 64px;
 	margin: 0px auto;
     box-sizing: content-box;
 }
 
 .root{ 
 	padding: 101px 0 0 0;
+}
+
+.link{
+	font-size: 18px;
+	line-height: 150%;
+	font-weight: 700;
+	a{
+		color: $white;
+		transition: 300ms;
+	}
+	&:hover{
+		a{
+			color: $orange;
+		}
+	}
+}
+
+.list{
+	display: flex;
+	justify-content: space-between;
+	max-width: 312px;
+	width: 100%;
+}
+
+.logo {
+	svg{
+		width: 107px;
+		height: 69px;
+		fill: $white;
+	}
 }
