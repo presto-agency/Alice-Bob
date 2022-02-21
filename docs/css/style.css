@@ -1,3 +1,21 @@
+/* colors */
+
+/* gradients */
+
+.par p {
+  font-size: 17px;
+  line-height: 160%;
+  font-weight: 400;
+  color: #C9CACA;
+}
+
+.h1 {
+  font-size: 64px;
+  line-height: 120%;
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
 @font-face {
   font-family: "Heebo";
   font-display: swap;
@@ -200,6 +218,68 @@ h6 {
   fill: #FFFFFF;
 }
 
+.btn a {
+  position: relative;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 700;
+  text-transform: uppercase;
+  position: relative;
+  color: #FFFFFF;
+  border-radius: 99px;
+  min-height: 56px;
+  padding: 0 58px;
+  letter-spacing: 0.03em;
+}
+
+.btn a span {
+  position: relative;
+  z-index: 2;
+}
+
+.btn a:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 99px;
+  background: -webkit-gradient(linear, left top, right top, from(#F47917), to(#2A3F8F));
+  background: -o-linear-gradient(left, #F47917 0%, #2A3F8F 100%);
+  background: linear-gradient(90deg, #F47917 0%, #2A3F8F 100%);
+}
+
+.btn a:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 99px;
+  background: -webkit-gradient(linear, left top, right top, from(#E6DE21), to(#F57917)), -webkit-gradient(linear, left top, right top, from(#F47917), to(#2A3F8F)), -webkit-gradient(linear, left bottom, left top, from(#009552), to(#009552)), #009552;
+  background: -o-linear-gradient(left, #E6DE21 0%, #F57917 100%), -o-linear-gradient(left, #F47917 0%, #2A3F8F 100%), -o-linear-gradient(bottom, #009552, #009552), #009552;
+  background: linear-gradient(90deg, #E6DE21 0%, #F57917 100%), linear-gradient(90deg, #F47917 0%, #2A3F8F 100%), linear-gradient(0deg, #009552, #009552), #009552;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
+}
+
+.btn a:hover:after {
+  opacity: 1;
+}
+
 .header {
   position: fixed;
   z-index: 10;
@@ -251,4 +331,50 @@ h6 {
 
 .footer__list {
   margin: 0 0 0 134px;
+}
+
+.block-1 {
+  margin: 111px 0 235px 0;
+}
+
+.block-1__content {
+  max-width: 700px;
+}
+
+.block-1__title {
+  margin: 0 0 24px 0;
+}
+
+.block-1__title h1 {
+  text-indent: 63px;
+}
+
+.block-1__title h1 span {
+  color: #F57A17;
+}
+
+.block-1__description {
+  max-width: 483px;
+  margin: 24px 0 34px 80px;
+}
+
+.block-1__description p span {
+  font-weight: 700;
+  color: #FFFFFF;
+}
+
+.block-1__btn {
+  margin: 34px 0 0 0;
+}
+
+.block-1__lottie-1 {
+  position: absolute;
+  top: 144px;
+  right: -337px;
+  width: 1237px;
+}
+
+.block-1__lottie-1 canvas {
+  width: 100% !important;
+  height: 100% !important;
 }

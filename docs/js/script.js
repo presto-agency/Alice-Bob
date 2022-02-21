@@ -1,30 +1,17 @@
 window.addEventListener('DOMContentLoaded', function () {
-
+    lottieAnimation()
 })
 
-// const bg = () => {
-//     document.querySelectorAll(".ibg").forEach(el => {
-//         if (el.querySelector('img')) {
-//             el.style.backgroundImage = 'url(' + el.querySelector('img').getAttribute('src') + ')';
-//             el.querySelector('img').style.display = 'none';
-//         }
-//     });
-// }
+const lottieAnimation = () => {
+    let animation = bodymovin.loadAnimation({
+        container: document.getElementById('lottie-1'),
+        path: 'plugins/json/lottie.json',
+        renderer: 'canvas',
+        loop: false,
+        autoplay: true,
+    })
+}
 
-// const scrollPage = () => {
-//     let scrollPosition;
-//     const header = document.querySelector('.header');
-//     const scrollChange = 1;
-
-//     const addClass = () => header.classList.add("hide")
-//     const removeClass = () => header.classList.remove("hide")
-
-//     window.addEventListener('scroll', function () {
-//         scrollPosition = window.scrollY;
-//         if (scrollPosition >= scrollChange) { addClass() }
-//         else { removeClass() }
-//     })
-// }
 
 
 
