@@ -29,15 +29,20 @@
         margin: 34px 0 0 0;
     }
 
-    &__lottie-1{
+    &__lottie{
         position: absolute;
         top: 158px;
-        right: -387px;
-        width: 1421px;
-        height: 756px;
+        right: -582px;
+        width: 2054px;
+        height: 994px;
         canvas{
             width: 100%!important;
             height: 100%!important;
+        }
+        @media(max-width: 1679px){
+            right: -387px;
+            width: 1421px;
+            height: 756px;
         }
     }
 }

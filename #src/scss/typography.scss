@@ -7,8 +7,30 @@
     }
 }
 .h1{
-    font-size: 64px;
-    line-height: 120%;
-    font-weight: 700;
-    color: $white;
+    h1{
+        font-size: 64px;
+        line-height: 120%;
+        font-weight: 700;
+        color: $white;
+        text-transform: uppercase;
+    }
+}
+
+.h2{
+    h2{
+        font-size: 48px;
+        line-height: 120%;
+        font-weight: 700;
+        color: $black;
+        text-transform: uppercase;
+    }
+}
+
+.h3{
+    h3{
+        font-size: 36px;
+        line-height: 120%;
+        font-weight: 700;
+        color: $black;
+    }
 }

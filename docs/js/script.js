@@ -10,7 +10,20 @@ const lottieAnimation = () => {
         loop: false,
         autoplay: true,
     })
+
+    LottieInteractivity.create({
+        player: '#lottie-2',
+        mode: "scroll",
+        actions: [
+            {
+                visibility: [0, 0.7],
+                type: "seek",
+                frames: [20, 180],
+            }
+        ]
+    });
 }
+
 
 
 
