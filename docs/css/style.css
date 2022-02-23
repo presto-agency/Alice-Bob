@@ -314,6 +314,7 @@ h6 {
   z-index: 11;
   width: 100vw;
   height: 100vh;
+  background: #191919;
 }
 
 .preloader__logo {
@@ -582,6 +583,7 @@ h6 {
 
 .block-1 {
   margin: 111px 0 235px 0;
+  height: 100vh;
 }
 
 .block-1.active .block-1__description {
@@ -624,8 +626,8 @@ h6 {
 
 @-webkit-keyframes toptobottom {
   0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 
   100% {
@@ -636,8 +638,8 @@ h6 {
 
 @keyframes toptobottom {
   0% {
-    -webkit-transform: translateY(-100px);
-            transform: translateY(-100px);
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
   }
 
   100% {
@@ -651,13 +653,13 @@ h6 {
 }
 
 .block-1.active .block-1__title-block:nth-child(2) p {
-  -webkit-animation-delay: 200ms;
-          animation-delay: 200ms;
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
 }
 
 .block-1.active .block-1__title-block:nth-child(3) p {
-  -webkit-animation-delay: 400ms;
-          animation-delay: 400ms;
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
 }
 
 .block-1__content {

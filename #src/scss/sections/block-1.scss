@@ -1,5 +1,6 @@
 .block-1 {
     margin: 111px 0 235px 0;
+    height: 100vh;
     &.active{
         .block-1{
             &__description {
@@ -21,7 +22,7 @@
                     animation: toptobottom 1s linear forwards;
                     @keyframes toptobottom {
                         0%{
-                            transform: translateY(-100px)
+                            transform: translateY(-100%)
                         }
                         100%{
                             transform: translateY(0)
@@ -35,12 +36,12 @@
                 }
                 &:nth-child(2){
                     p{
-                        animation-delay: 200ms;
+                        animation-delay: 100ms;
                     }
                 }
                 &:nth-child(3){
                     p{
-                        animation-delay: 400ms;
+                        animation-delay: 200ms;
                     }
                 }
             }
