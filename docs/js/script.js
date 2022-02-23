@@ -45,8 +45,10 @@ const removePreloader = () => {
 const addclass = () => {
     let header = document.querySelector('.header');
     let block = document.querySelector('.block-1');
-    addActive(header)
-    addActive(block)
+    let wrapper = document.querySelector('.wrapper');
+    addActive(header);
+    addActive(block);
+    addActive(wrapper);
 }
 
 const addClassToScroll = () => {
