@@ -1,5 +1,5 @@
 .block-1 {
-    margin: 111px 0 235px 0;
+    margin: 111px 0 0 0;
     height: 100vh;
     &.active{
         .block-1{
@@ -29,11 +29,6 @@
                         }
                     }
                 }
-                &:first-child{
-                    p{
-                        text-indent: 63px;
-                    }
-                }
                 &:nth-child(2){
                     p{
                         animation-delay: 100ms;
@@ -45,13 +40,33 @@
                     }
                 }
             }
+            &__gradient-circle{
+                animation-name: flick;
+                animation-duration: 500ms;
+                animation-timing-function: linear;
+                animation-delay: 500ms;
+                animation-iteration-count: 3;
+                animation-fill-mode: forwards;
+                animation-direction: alternate;
+                @keyframes flick {
+                    0%{
+                        opacity: 0;
+                    }
+                    100%{
+                        opacity: 1;
+                    }
+                }
+            }
         }
     }
     &__content {
+        position: relative;
         max-width: 700px;
     }
 
     &__title {
+        position: relative;
+        z-index: 2;
         margin: 0 0 24px 0;
         display: flex;
         flex-direction: column;
@@ -66,9 +81,16 @@
                 color: $orange;
             }
         }
+        &:first-child{
+            p{
+                text-indent: 63px;
+            }
+        }
     }
 
     &__description {
+        position: relative;
+        z-index: 2;
         max-width: 483px;
         margin: 24px 0 34px 80px;
         opacity: 0;
@@ -99,5 +121,16 @@
             width: 1421px;
             height: 756px;
         }
+    }
+
+    &__gradient-circle{
+        position: absolute;
+        opacity: 0;
+        border-radius: 50%;
+        top: 190px;
+        left: 1px;
+        width: 240px;
+        height: 240px;
+        background: $bg-circle;
     }
 }
