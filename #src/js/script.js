@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
     lottieInter()
     addclass()
     addClassToScroll()
+    scrollingclass()
 })
 
 const lottieAnimation = () => {
@@ -67,6 +68,18 @@ const addClassToScroll = () => {
         return (((topOfElements <= window.innerHeight) && (bottomOfElements > 0)));
     }
 };
+
+const scrollingclass = () => {
+    let header = document.querySelector('.header');
+    window.onscroll = function (e) {
+        if (window.scrollY > 16) {
+            header.classList.add('scroll-page')
+        }
+        else {
+            header.classList.remove('scroll-page')
+        }
+    };
+}
 
 function addActive(obj) {
     const addClass = () => {

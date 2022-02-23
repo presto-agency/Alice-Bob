@@ -5,6 +5,9 @@
     left: 0;
     width: 100%;
     transform: translateY(-100%);
+    background: $black;
+    padding: 32px 0 16px 0;
+    transition: 300ms;
     &.active{
         animation: slide-up 1s linear forwards;
         @keyframes slide-up{
@@ -19,11 +22,13 @@
             }
         }
     }
+    &.scroll-page{
+        padding: 16px 0 16px 0;
+    }
     &__content {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        margin: 32px 0 0 0;
     }
 }
 

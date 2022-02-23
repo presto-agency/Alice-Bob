@@ -500,6 +500,11 @@ h6 {
   -webkit-transform: translateY(-100%);
       -ms-transform: translateY(-100%);
           transform: translateY(-100%);
+  background: #191919;
+  padding: 32px 0 16px 0;
+  -webkit-transition: 300ms;
+  -o-transition: 300ms;
+  transition: 300ms;
 }
 
 .header.active {
@@ -541,6 +546,10 @@ h6 {
   }
 }
 
+.header.scroll-page {
+  padding: 16px 0 16px 0;
+}
+
 .header__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -551,7 +560,6 @@ h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 32px 0 0 0;
 }
 
 .footer {
