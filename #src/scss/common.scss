@@ -202,3 +202,36 @@
 		}
 	}
 }
+
+.description {
+	max-width: 578px;
+	&__title {
+		margin: 0 0 40px 0;
+	}
+	&__title-block {
+		color: $white;
+		span{
+			color: $orange;
+		}
+		&:first-child{
+			text-indent: 70px;
+		}
+	}
+	&__text {
+		h4{
+			color: $white;
+			margin: 0 0 24px 0;
+		}
+		p{
+			margin: 0 0 15px 0;
+			&:last-child{
+				margin: 0;
+			}
+			color: $grey-600;
+			span{
+				color: $white;
+				font-weight: 700;
+			}
+		}
+	}
+}
