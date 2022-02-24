@@ -14,12 +14,19 @@ margin: 200px 0;
 
     &__btn {
         margin: 32px 0 0 0;
+        transform: translateY(-20px);
+        transition: 1s;
         a{
             padding: 0 75px;
         }
+        &.active{
+			transform: translateY(0);
+			opacity: 1;
+		}
     }
 
     &__img {
+        overflow: hidden;
         max-width: 640px;
         max-height: 432px;
         margin: 0 0 0 auto;
@@ -27,12 +34,16 @@ margin: 200px 0;
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transform: scale(1.5);
+            transition: 1s;
+        }
+        &.active{
+            img{
+                transform: scale(1);
+            }
         }
     }
     .description {
-    
-        &__title {
-        }
     
         &__title-block {
             &:first-child{
