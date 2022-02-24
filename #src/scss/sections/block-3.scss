@@ -2,7 +2,6 @@
     margin: 200px 0;
     &__content {
         display: flex;
-        justify-content: space-between;
     }
 
     &__img {
@@ -21,6 +20,7 @@
     }
 
     &__description{
+        max-width: 578px;
         margin: 51px 0 0 16px;
     }
 }
