@@ -55,7 +55,7 @@ const addclass = () => {
 const addClassToScroll = () => {
     window.addEventListener("scroll", scrolling, true);
     function scrolling() {
-        const elementsPage = document.querySelectorAll('.block-2__content, .block-2__title-block, .block-2__img, .block-2__title-wrapper, .description__title-block, .block-3__img, .block-4__img, .description__text, .block-4__btn');
+        const elementsPage = document.querySelectorAll('.block-2__content, .block-2__title-block, .block-2__img, .block-2__title-wrapper, .description__title-block, .block-3__img, .block-4__img, .description__text, .block-4__btn, .block-3__gradient-circle');
         elementsPage.forEach(el => {
             if (isFullyVisible(el)) {
                 el.classList.add('active');

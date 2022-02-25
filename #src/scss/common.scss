@@ -268,3 +268,11 @@
 		}
 	}
 }
+
+.gradient-circle{
+	position: absolute;
+	border-radius: 50%;
+	width: 240px;
+	height: 240px;
+	background: $bg-circle;
+}
