@@ -1,9 +1,16 @@
 .block-5 {
     margin: 200px 0;
     &__content {
+        max-width: 680px;
         background: $white;
         padding: 120px 112px;
-        border-radius: 20px;
+        border-radius: 250px;
+        margin: 0 auto;
+        transition: 800ms;
+        &.active{
+            max-width: 100%;
+            border-radius: 20px;
+        }
     }
 
     &__title {
@@ -11,16 +18,50 @@
     }
 
     &__title-block {
+        overflow: hidden;
         span{
             color: $orange;
         }
+        p{
+			transform: translateY(-100%);
+		}
         &:first-child{
             text-indent: 60px;
+        }
+        &.active{
+            p{
+                animation: toptobottom 1s linear 500ms forwards;
+                @keyframes toptobottom {
+                    0%{
+                        transform: translateY(-100%)
+                    }
+                    100%{
+                        transform: translateY(0)
+                    }
+                }
+            }
+            &:nth-child(2){
+                p{
+                    animation-delay: 510ms;
+                }
+            }
+            &:nth-child(3){
+                p{
+                    animation-delay: 520ms;
+                }
+            }
         }
     }
 
     &__description {
+        opacity: 0;
+        transform: translateY(-30px);
         display: flex;
+        transition: 1s linear 1.5s;
+        &.active{
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     &__column {
@@ -28,6 +69,7 @@
     }
 
     &__text{
+        margin: 0 40px 0 0;
         p{
             max-width: 433px;
             font-size: 17px;
@@ -75,7 +117,7 @@
                 font-size: 13px;
                 line-height: 120%;
                 color: $grey-600;
-                span{
+                a{
                     color: $orange;
                     text-decoration: underline;
                 }
