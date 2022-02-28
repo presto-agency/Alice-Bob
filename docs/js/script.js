@@ -88,14 +88,12 @@ const addClassFooter = () => {
     window.addEventListener("scroll", scrolling, true);
     function scrolling() {
         const el = document.querySelector('.footer');
-        console.log(window.innerHeight)
         if (isFullyVisible(el)) {
             el.classList.add('active');
         }
     }
     function isFullyVisible(el) {
         let topOfElement = el.getBoundingClientRect().top;
-        console.log(topOfElement)
         return (topOfElement <= window.innerHeight);
     }
 };

@@ -686,12 +686,20 @@ h6 {
   z-index: 10;
   padding: 50px 0;
   border-top: 1px solid #585857;
-  -webkit-transform: translateY(70%);
-      -ms-transform: translateY(70%);
-          transform: translateY(70%);
-  -webkit-transition: 1s;
-  -o-transition: 1s;
-  transition: 1s;
+  -webkit-transform: translateY(50px);
+      -ms-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.footer.active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
 }
 
 .footer__content {
@@ -717,12 +725,6 @@ h6 {
 
 .footer__list {
   margin: 0 0 0 134px;
-}
-
-.footer.active {
-  -webkit-transform: translateY(0);
-      -ms-transform: translateY(0);
-          transform: translateY(0);
 }
 
 .block-1 {
