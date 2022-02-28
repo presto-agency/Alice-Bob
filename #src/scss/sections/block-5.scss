@@ -54,18 +54,19 @@
     }
 
     &__description {
-        opacity: 0;
+        position: relative;
         transform: translateY(-30px);
         display: flex;
+    }
+    
+    &__column {
+        opacity: 0;
+        flex: 1 0 50%;
         transition: 1s linear 1.5s;
         &.active{
             opacity: 1;
             transform: translateY(0);
         }
-    }
-
-    &__column {
-        flex: 1 0 50%;
     }
 
     &__text{
@@ -80,6 +81,14 @@
                 margin: 0;
             }
         }
+    }
+
+    &__lottie{
+        position: absolute;
+        bottom: -153px;
+        left: -93px;
+        width: 614px;
+        height: 265px;
     }
     .form {
         max-width: 528px;

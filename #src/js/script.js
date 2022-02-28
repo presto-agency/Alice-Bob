@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', function () {
     addclass()
     addClassToScroll()
     scrollingclass()
+    lottieForm()
 })
 
 const lottieAnimation = () => {
@@ -18,7 +19,6 @@ const lottieAnimation = () => {
         })
     }
     setTimeout(lottieTop, 4500)
-
 }
 
 const lottieInter = () => {
@@ -30,6 +30,20 @@ const lottieInter = () => {
                 visibility: [0, 0.7],
                 type: "seek",
                 frames: [20, 180],
+            }
+        ]
+    });
+}
+
+const lottieForm = () => {
+    LottieInteractivity.create({
+        player: '#lottie-3',
+        mode: "scroll",
+        actions: [
+            {
+                visibility: [0, 1],
+                type: "play",
+                frames: [0, 49],
             }
         ]
     });
@@ -55,7 +69,7 @@ const addclass = () => {
 const addClassToScroll = () => {
     window.addEventListener("scroll", scrolling, true);
     function scrolling() {
-        const elementsPage = document.querySelectorAll('.block-2__content, .block-2__title-block, .block-2__img, .block-2__title-wrapper, .description__title-block, .block-3__img, .block-4__img, .description__text, .block-4__btn, .block-3__gradient-circle, .block-5__content, .block-5__description, .block-5__title-block');
+        const elementsPage = document.querySelectorAll('.block-2__content, .block-2__title-block, .block-2__img, .block-2__title-wrapper, .description__title-block, .block-3__img, .block-4__img, .description__text, .block-4__btn, .block-3__gradient-circle, .block-5__content, .block-5__column, .block-5__title-block');
         elementsPage.forEach(el => {
             if (isFullyVisible(el)) {
                 el.classList.add('active');
