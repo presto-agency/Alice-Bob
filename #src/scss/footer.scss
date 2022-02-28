@@ -3,6 +3,8 @@
     z-index: 10;
     padding: 50px 0;
     border-top: 1px solid $grey-800;
+    transform: translateY(70%);
+    transition: 1s;
     &__content {
         display: flex;
         justify-content: space-between;
@@ -20,5 +22,8 @@
 
     &__list{
         margin: 0 0 0 134px;
+    }
+    &.active{
+        transform: translateY(0);
     }
 }

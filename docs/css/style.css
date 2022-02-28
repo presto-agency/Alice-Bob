@@ -686,6 +686,12 @@ h6 {
   z-index: 10;
   padding: 50px 0;
   border-top: 1px solid #585857;
+  -webkit-transform: translateY(70%);
+      -ms-transform: translateY(70%);
+          transform: translateY(70%);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
 }
 
 .footer__content {
@@ -711,6 +717,12 @@ h6 {
 
 .footer__list {
   margin: 0 0 0 134px;
+}
+
+.footer.active {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
 }
 
 .block-1 {
@@ -1575,6 +1587,103 @@ h6 {
 
 .block-6 .description__title-block:first-child {
   text-indent: 84px;
+}
+
+.block-7 {
+  margin: 200px 0 100px 0;
+}
+
+.block-7__title-wrapper {
+  overflow: hidden;
+}
+
+.block-7__title-wrapper h2 {
+  color: #F57A17;
+  -webkit-transform: translateY(-100%);
+      -ms-transform: translateY(-100%);
+          transform: translateY(-100%);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.block-7__title-wrapper.active h2 {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
+.block-7__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 0;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 50px 0 0 0;
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.block-7__list.active {
+  opacity: 1;
+}
+
+.block-7__item {
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid #282520;
+  height: 328px;
+  max-width: 328px;
+  width: 25%;
+}
+
+.block-7__item svg {
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  fill: #FFFFFF;
+}
+
+.block-7__item:before {
+  content: "";
+  position: absolute;
+}
+
+.block-7__item:nth-child(1) svg {
+  width: 200px;
+  height: 28px;
+}
+
+.block-7__item:nth-child(2) svg {
+  width: 71px;
+  height: 50px;
+}
+
+.block-7__item:nth-child(3) svg {
+  width: 40px;
+  height: 58px;
+}
+
+.block-7__item:nth-child(4) svg {
+  width: 239px;
+  height: 20px;
+}
+
+.block-7__gradient-circle {
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
 }
 
 @media (max-width: 1679px) {
