@@ -1,15 +1,6 @@
 .block-7 {
     margin: 200px 0 100px 0;
 
-    .title{
-        &__title-block{
-            overflow: hidden;
-            span{
-                color: $orange;
-            }
-        }
-    }
-
     &__list {
         display: flex;
         opacity: 0;

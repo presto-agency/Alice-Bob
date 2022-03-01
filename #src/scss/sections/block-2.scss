@@ -21,20 +21,8 @@ margin: 0 0 200px 0;
     }
 
     .title {
-        position: relative;
         max-width: 345px;
-        z-index: 2;
-        display: flex;
-        flex-direction: column;
         &__title-block{
-            overflow: hidden;
-            p{
-                white-space: nowrap;
-                transform: translateY(100px);
-                span{
-                    color: $orange;
-                }
-            }
             &:first-child{
                 p{
                     text-indent: 58px;
@@ -61,7 +49,7 @@ margin: 0 0 200px 0;
         overflow: hidden;
         h3{
             transform: translateY(-100%);
-            transition: 1s;
+            transition: 1200ms ease-in-out;
         }
         &.active{
             h3{

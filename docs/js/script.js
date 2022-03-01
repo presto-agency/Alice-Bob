@@ -18,7 +18,7 @@ const lottieAnimation = () => {
             autoplay: true,
         })
     }
-    setTimeout(lottieTop, 4500)
+    setTimeout(lottieTop, 3500)
 };
 
 const lottieInter = () => {
@@ -54,7 +54,7 @@ const removePreloader = () => {
     function removePreloader() {
         preloader.remove()
     }
-    setTimeout(removePreloader, 4500)
+    setTimeout(removePreloader, 3500)
 };
 
 const addclassToTopBlock = () => {
@@ -63,7 +63,7 @@ const addclassToTopBlock = () => {
         addClassTimeout(el)
     })
     function addClassTimeout(el) {
-        setTimeout(function () { el.classList.add('active') }, 4500);
+        setTimeout(function () { el.classList.add('active') }, 3500);
     }
 };
 

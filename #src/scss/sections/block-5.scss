@@ -73,7 +73,7 @@
     &__column {
         opacity: 0;
         flex: 1 0 50%;
-        transition: 1s linear 1.5s;
+        transition: 1s linear 500ms;
     }
 
     &__text{
