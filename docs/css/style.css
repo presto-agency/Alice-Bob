@@ -512,7 +512,7 @@ h6 {
   background: radial-gradient(50% 50% at 50% 50%, rgba(245, 122, 23, 0.1) 0%, rgba(245, 122, 23, 0) 100%);
 }
 
-.active-text p {
+.title.active .title__title-block p {
   -webkit-animation: toptobottom 1s linear forwards;
           animation: toptobottom 1s linear forwards;
 }
@@ -541,12 +541,12 @@ h6 {
   }
 }
 
-.active-text:nth-child(2) p {
+.title.active .title__title-block:nth-child(2) p {
   -webkit-animation-delay: 10ms;
           animation-delay: 10ms;
 }
 
-.active-text:nth-child(3) p {
+.title.active .title__title-block:nth-child(3) p {
   -webkit-animation-delay: 20ms;
           animation-delay: 20ms;
 }

@@ -211,26 +211,32 @@
 	background: $bg-circle;
 }
 
-.active-text{
-	p{
-		animation: toptobottom 1s linear forwards;
-		@keyframes toptobottom {
-			0%{
-				transform: translateY(-100%)
+.title{
+	&.active{
+		.title{
+			&__title-block{
+				p{
+					animation: toptobottom 1s linear forwards;
+					@keyframes toptobottom {
+						0%{
+							transform: translateY(-100%)
+						}
+						100%{
+							transform: translateY(0)
+						}
+					}
+				}
+				&:nth-child(2){
+					p{
+						animation-delay: 10ms;
+					}
+				}
+				&:nth-child(3){
+					p{
+						animation-delay: 20ms;
+					}
+				}
 			}
-			100%{
-				transform: translateY(0)
-			}
-		}
-	}
-	&:nth-child(2){
-		p{
-			animation-delay: 10ms;
-		}
-	}
-	&:nth-child(3){
-		p{
-			animation-delay: 20ms;
 		}
 	}
 }

@@ -1,13 +1,11 @@
 window.addEventListener('DOMContentLoaded', function () {
     lottieAnimation()
-    removePreloader()
     lottieInter()
-    addclass()
-    addClassToScroll()
-    scrollingclass()
     lottieForm()
-    addClassFooter()
-    addClassToText()
+    removePreloader()
+    addclassToTopBlock()
+    addClassToScroll()
+    addClassToHeader()
 })
 
 const lottieAnimation = () => {
@@ -21,7 +19,7 @@ const lottieAnimation = () => {
         })
     }
     setTimeout(lottieTop, 4500)
-}
+};
 
 const lottieInter = () => {
     LottieInteractivity.create({
@@ -35,7 +33,7 @@ const lottieInter = () => {
             }
         ]
     });
-}
+};
 
 const lottieForm = () => {
     LottieInteractivity.create({
@@ -49,7 +47,7 @@ const lottieForm = () => {
             }
         ]
     });
-}
+};
 
 const removePreloader = () => {
     let preloader = document.querySelector('.preloader');
@@ -57,21 +55,22 @@ const removePreloader = () => {
         preloader.remove()
     }
     setTimeout(removePreloader, 4500)
-}
+};
 
-const addclass = () => {
-    let header = document.querySelector('.header');
-    let block = document.querySelector('.block-1');
-    let wrapper = document.querySelector('.wrapper');
-    addActive(header);
-    addActive(block);
-    addActive(wrapper);
-}
+const addclassToTopBlock = () => {
+    let elements = document.querySelectorAll('.header, .block-1, .wrapper');
+    elements.forEach(el => {
+        addClassTimeout(el)
+    })
+    function addClassTimeout(el) {
+        setTimeout(function () { el.classList.add('active') }, 4500);
+    }
+};
 
 const addClassToScroll = () => {
+    const elementsPage = document.querySelectorAll('.block-2__content, .block-2__img, .block-2__title-wrapper, .block-3, .block-4, .block-5, .block-6__img, .block-7__list, .title, .footer');
     window.addEventListener("scroll", scrolling, true);
     function scrolling() {
-        const elementsPage = document.querySelectorAll('.block-2__content, .block-2__img, .block-2__title-wrapper, .block-3, .block-4, .block-5, .block-6__img, .block-7__list');
         elementsPage.forEach(el => {
             if (isFullyVisible(el)) {
                 el.classList.add('active');
@@ -79,44 +78,18 @@ const addClassToScroll = () => {
         });
     }
     function isFullyVisible(el) {
-        let topOfElements = el.getBoundingClientRect().top;
-        let bottomOfElements = el.getBoundingClientRect().bottom;
-        return (((topOfElements <= window.innerHeight) && (bottomOfElements > 0)));
-    }
-};
-
-const addClassToText = () => {
-    window.addEventListener("scroll", scrolling, true);
-    function scrolling() {
-        const elementsPage = document.querySelectorAll('.title');
-        elementsPage.forEach(el => {
-            if (isFullyVisible(el)) {
-                el.classList.add('active-text');
-            }
-        });
-    }
-    function isFullyVisible(el) {
-        let topOfElements = el.getBoundingClientRect().top;
-        let bottomOfElements = el.getBoundingClientRect().bottom;
-        return (((topOfElements <= window.innerHeight) && (bottomOfElements > 0)));
-    }
-};
-
-const addClassFooter = () => {
-    window.addEventListener("scroll", scrolling, true);
-    function scrolling() {
-        const el = document.querySelector('.footer');
-        if (isFullyVisible(el)) {
-            el.classList.add('active');
+        let topOfElement = el.getBoundingClientRect().top;
+        let bottomOfElement = el.getBoundingClientRect().bottom;
+        if (el.classList.contains('footer')) {
+            return (topOfElement <= window.innerHeight);
+        }
+        else {
+            return (((topOfElement <= window.innerHeight) && (bottomOfElement > 0)));
         }
     }
-    function isFullyVisible(el) {
-        let topOfElement = el.getBoundingClientRect().top;
-        return (topOfElement <= window.innerHeight);
-    }
 };
 
-const scrollingclass = () => {
+const addClassToHeader = () => {
     let header = document.querySelector('.header');
     window.onscroll = function (e) {
         if (window.scrollY > 16) {
@@ -126,14 +99,8 @@ const scrollingclass = () => {
             header.classList.remove('scroll-page')
         }
     };
-}
+};
 
-function addActive(obj) {
-    const addClass = () => {
-        obj.classList.add('active')
-    }
-    setTimeout(addClass, 4500)
-}
 
 
 
