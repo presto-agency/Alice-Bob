@@ -1,5 +1,22 @@
 .block-4 {
 margin: 200px 0;
+    &.active{
+        .block-4{
+            &__btn{
+                transform: translateY(0);
+                opacity: 1;
+            }
+            &__img{
+                img{
+                    transform: scale(1);
+                }
+            }
+            &__text{
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    }
     &__content{
         display: flex;
     }
@@ -19,10 +36,6 @@ margin: 200px 0;
         a{
             padding: 0 75px;
         }
-        &.active{
-			transform: translateY(0);
-			opacity: 1;
-		}
     }
 
     &__img {
@@ -37,22 +50,17 @@ margin: 200px 0;
             transform: scale(1.2);
             transition: 1s;
         }
-        &.active{
-            img{
-                transform: scale(1);
-            }
-        }
     }
-    .description {
-    
+
+    &__text {
+        max-width: 472px;
+	}
+
+    .title{
         &__title-block {
             &:first-child{
                 text-indent: 107px;
             }
-        }
-    
-        &__text {
-            max-width: 472px;
         }
     }
 }

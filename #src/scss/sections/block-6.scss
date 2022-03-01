@@ -19,8 +19,13 @@
         }
     }
 
-    .description{
+    .title{
+        color: $white;
+        span{
+            color: $orange;
+        }
         &__title-block{
+            overflow: hidden;
             &:first-child{
                 text-indent: 84px;
             }

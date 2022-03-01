@@ -203,76 +203,70 @@
 	}
 }
 
-.description {
-	&__title {
-		margin: 0 0 40px 0;
-	}
-	&__title-block {
-		overflow: hidden;
-		color: $white;
-		span{
-			color: $orange;
-		}
-		p{
-			transform: translateY(-100%);
-		}
-		&:first-child{
-			text-indent: 70px;
-		}
-		&.active{
-            p{
-                animation: toptobottom 1s linear forwards;
-                @keyframes toptobottom {
-                    0%{
-                        transform: translateY(-100%)
-                    }
-                    100%{
-                        transform: translateY(0)
-                    }
-                }
-            }
-            &:nth-child(2){
-                p{
-                    animation-delay: 10ms;
-                }
-            }
-            &:nth-child(3){
-                p{
-                    animation-delay: 20ms;
-                }
-            }
-        }
-	}
-	&__text {
-		transform: translateY(-20px);
-		opacity: 0;
-		transition: 1s;
-		h4{
-			color: $white;
-			margin: 0 0 24px 0;
-		}
-		p{
-			margin: 0 0 15px 0;
-			&:last-child{
-				margin: 0;
-			}
-			color: $grey-600;
-			span{
-				color: $white;
-				font-weight: 700;
-			}
-		}
-		&.active{
-			transform: translateY(0);
-			opacity: 1;
-		}
-	}
-}
-
 .gradient-circle{
 	position: absolute;
 	border-radius: 50%;
 	width: 240px;
 	height: 240px;
 	background: $bg-circle;
+}
+
+.active-text{
+	p{
+		animation: toptobottom 1s linear forwards;
+		@keyframes toptobottom {
+			0%{
+				transform: translateY(-100%)
+			}
+			100%{
+				transform: translateY(0)
+			}
+		}
+	}
+	&:nth-child(2){
+		p{
+			animation-delay: 10ms;
+		}
+	}
+	&:nth-child(3){
+		p{
+			animation-delay: 20ms;
+		}
+	}
+}
+
+.text-mod{
+	transform: translateY(-20px);
+	opacity: 0;
+	transition: 1s;
+	h4{
+		color: $white;
+		margin: 0 0 24px 0;
+	}
+	p{
+		margin: 0 0 15px 0;
+		&:last-child{
+			margin: 0;
+		}
+		color: $grey-600;
+		span{
+			color: $white;
+			font-weight: 700;
+		}
+	}
+}
+
+.title-mod{
+	.title{
+        &__title-block {
+            overflow: hidden;
+            color: $white;
+            span{
+                color: $orange;
+            }
+            p{
+                transform: translateY(-100%);
+            }
+        }
+    }
 }

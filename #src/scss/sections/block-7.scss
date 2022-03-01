@@ -1,16 +1,11 @@
 .block-7 {
     margin: 200px 0 100px 0;
 
-    &__title-wrapper {
-        overflow: hidden;
-        h2{
-            color: $orange;
-            transform: translateY(-100%);
-            transition: 1s;
-        }
-        &.active{
-            h2{
-                transform: translateY(0);
+    .title{
+        &__title-block{
+            overflow: hidden;
+            span{
+                color: $orange;
             }
         }
     }
@@ -21,7 +16,7 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin: 50px 0 0 0;
-        transition: 1s;
+        transition: 2s;
         &.active{
             opacity: 1;
         }
@@ -33,7 +28,7 @@
         border: 1px solid $grey-circle;
         height: 328px;
         max-width: 328px;
-        width: (100% / 4);
+        width: calc(100% / 4);
         svg{
             position: absolute;
             z-index: 2;

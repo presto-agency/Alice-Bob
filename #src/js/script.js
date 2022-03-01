@@ -7,6 +7,7 @@ window.addEventListener('DOMContentLoaded', function () {
     scrollingclass()
     lottieForm()
     addClassFooter()
+    addClassToText()
 })
 
 const lottieAnimation = () => {
@@ -70,10 +71,27 @@ const addclass = () => {
 const addClassToScroll = () => {
     window.addEventListener("scroll", scrolling, true);
     function scrolling() {
-        const elementsPage = document.querySelectorAll('.block-2__content, .block-2__title-block, .block-2__img, .block-2__title-wrapper, .description__title-block, .block-3__img, .block-4__img, .description__text, .block-4__btn, .block-3__gradient-circle, .block-5__content, .block-5__column, .block-5__title-block, .block-6__img, .block-7__list, .block-7__title-wrapper');
+        const elementsPage = document.querySelectorAll('.block-2__content, .block-2__img, .block-2__title-wrapper, .block-3, .block-4, .block-5, .block-6__img, .block-7__list');
         elementsPage.forEach(el => {
             if (isFullyVisible(el)) {
                 el.classList.add('active');
+            }
+        });
+    }
+    function isFullyVisible(el) {
+        let topOfElements = el.getBoundingClientRect().top;
+        let bottomOfElements = el.getBoundingClientRect().bottom;
+        return (((topOfElements <= window.innerHeight) && (bottomOfElements > 0)));
+    }
+};
+
+const addClassToText = () => {
+    window.addEventListener("scroll", scrolling, true);
+    function scrolling() {
+        const elementsPage = document.querySelectorAll('.title');
+        elementsPage.forEach(el => {
+            if (isFullyVisible(el)) {
+                el.classList.add('active-text');
             }
         });
     }

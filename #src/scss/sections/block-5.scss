@@ -7,9 +7,43 @@
         border-radius: 250px;
         margin: 0 auto;
         transition: 800ms;
-        &.active{
-            max-width: 100%;
-            border-radius: 20px;
+    }
+
+    &.active{
+        .block-5{
+            &__content{
+                max-width: 100%;
+                border-radius: 20px;
+            }
+
+            &__title-block{
+                p{
+                    animation: toptobottom 1s linear 500ms forwards;
+                    @keyframes toptobottom {
+                        0%{
+                            transform: translateY(-100%)
+                        }
+                        100%{
+                            transform: translateY(0)
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    p{
+                        animation-delay: 510ms;
+                    }
+                }
+                &:nth-child(3){
+                    p{
+                        animation-delay: 520ms;
+                    }
+                }
+            }
+
+            &__column {
+                opacity: 1;
+                transform: translateY(0);
+            }
         }
     }
 
@@ -28,29 +62,6 @@
         &:first-child{
             text-indent: 60px;
         }
-        &.active{
-            p{
-                animation: toptobottom 1s linear 500ms forwards;
-                @keyframes toptobottom {
-                    0%{
-                        transform: translateY(-100%)
-                    }
-                    100%{
-                        transform: translateY(0)
-                    }
-                }
-            }
-            &:nth-child(2){
-                p{
-                    animation-delay: 510ms;
-                }
-            }
-            &:nth-child(3){
-                p{
-                    animation-delay: 520ms;
-                }
-            }
-        }
     }
 
     &__description {
@@ -63,10 +74,6 @@
         opacity: 0;
         flex: 1 0 50%;
         transition: 1s linear 1.5s;
-        &.active{
-            opacity: 1;
-            transform: translateY(0);
-        }
     }
 
     &__text{
