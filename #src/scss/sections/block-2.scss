@@ -15,9 +15,6 @@ margin: 0 0 200px 0;
     &__column {
         position: relative;
         flex: 1 1 50%;
-        h3{
-            margin: 0 0 24px 0;
-        }
     }
 
     .title {
@@ -47,6 +44,7 @@ margin: 0 0 200px 0;
 
     &__title-wrapper{
         overflow: hidden;
+        margin: 0 0 24px 0;
         h3{
             transform: translateY(-100%);
             transition: 1200ms ease-in-out;
@@ -85,7 +83,7 @@ margin: 0 0 200px 0;
         font-size: 17px;
         line-height: 160%;
         padding: 0 0 0 36px;
-        margin: 0 0 10px 0;
+        margin: 0 0 9px 0;
         &:last-child{
             margin: 0;
         }

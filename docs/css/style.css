@@ -928,10 +928,6 @@ h6 {
           flex: 1 1 50%;
 }
 
-.block-2__column h3 {
-  margin: 0 0 24px 0;
-}
-
 .block-2 .title {
   max-width: 345px;
 }
@@ -955,6 +951,7 @@ h6 {
 
 .block-2__title-wrapper {
   overflow: hidden;
+  margin: 0 0 24px 0;
 }
 
 .block-2__title-wrapper h3 {
@@ -1006,7 +1003,7 @@ h6 {
   font-size: 17px;
   line-height: 160%;
   padding: 0 0 0 36px;
-  margin: 0 0 10px 0;
+  margin: 0 0 9px 0;
 }
 
 .block-2__link:last-child {
@@ -1138,6 +1135,10 @@ h6 {
   transition: 1s;
 }
 
+.block-3 .title {
+  margin: 0 0 40px 0;
+}
+
 .block-3 .title__title-block:first-child {
   text-indent: 70px;
 }
@@ -1218,6 +1219,10 @@ h6 {
 
 .block-4__text {
   max-width: 472px;
+}
+
+.block-4 .title {
+  margin: 0 0 40px 0;
 }
 
 .block-4 .title__title-block:first-child {
@@ -1302,9 +1307,6 @@ h6 {
 
 .block-5__description {
   position: relative;
-  -webkit-transform: translateY(-30px);
-      -ms-transform: translateY(-30px);
-          transform: translateY(-30px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1338,7 +1340,7 @@ h6 {
 
 .block-5__lottie {
   position: absolute;
-  bottom: -153px;
+  bottom: -123px;
   left: -93px;
   width: 614px;
   height: 265px;
