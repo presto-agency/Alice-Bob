@@ -30,6 +30,110 @@
         justify-content: space-between;
         align-items: center;
     }
+    &__burger{
+        display: none;
+        position: relative;
+        width: 32px;
+        height: 22px;
+        span{
+            position: absolute;
+            width: 32px;
+            height: 2px;
+            border-radius: 48px;
+            background: $white;
+            &:first-child{
+                top: 0;
+                left: 0;
+                animation: burger-top-out 300ms ease-in-out forwards;
+                @keyframes burger-top-out {
+                    0%{
+                        top: 50%;
+                        transform: translateY(-50%) rotate(45deg);
+                    }
+                    50%{
+                        top: 50%;
+                        transform: translateY(-50%);
+                    }
+                    100%{
+                        top: 0;
+                    }
+                }
+            }
+            &:nth-child(2){
+                top: 50%;
+                left: 0;
+                transform: translateY(-50%);
+                transition: 300ms ease-in-out;
+            }
+            &:last-child{
+                bottom: 0;
+                left: 0;
+                animation: burger-bottom-out 300ms ease-in-out forwards;
+                @keyframes burger-bottom-out {
+                    0%{
+                        bottom: 50%;
+                        transform: translateY(-50%) rotate(-45deg);
+                    }
+                    50%{
+                        bottom: 50%;
+                        transform: translateY(-50%);
+                    }
+                    100%{
+                        bottom: 0;
+                    }
+                }
+            }
+        }
+        &.active{
+            span{
+                &:first-child{
+                    animation: burger-top 300ms ease-in-out forwards;
+                    @keyframes burger-top {
+                        0%{
+                            top: 0;
+                        }
+                        50%{
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                        100%{
+                            top: 50%;
+                            transform: translateY(-50%) rotate(45deg);
+                        }
+                    }
+                }
+                &:nth-child(2){
+                    left: -32px;
+                    opacity: 0;
+                }
+                &:last-child{
+                    animation: burger-bottom 300ms ease-in-out forwards;
+                    @keyframes burger-bottom {
+                        0%{
+                            bottom: 0;
+                        }
+                        50%{
+                            bottom: 50%;
+                            transform: translateY(-50%);
+                        }
+                        100%{
+                            top: 50%;
+                            transform: translateY(-50%) rotate(-45deg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 1024px){
+        padding: 24px 0 14px 0;
+        &__list{
+            display: none;
+        }
+        &__burger{
+            display: block;
+        }
+    }
 }
 
 

@@ -17,10 +17,16 @@
     box-sizing: content-box;
 	position: relative;
 	z-index: 2;
+	@media (max-width: 1024px) {
+		padding: 0px 24px;
+	}
 }
 
 .root{ 
 	padding: 101px 0 0 0;
+	@media (max-width: 1024px) {
+		padding: 85px 0 0 0;
+	}
 }
 
 .link{
@@ -46,10 +52,25 @@
 }
 
 .logo {
+	width: 107px;
+	height: 69px;
+	a{
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
 	svg{
 		width: 107px;
 		height: 69px;
 		fill: $white;
+	}
+	@media (max-width: 1024px) {
+		height: 47px;
+		width: 72px;
+		svg{
+			width: 72px;
+			height: 47px;
+		}
 	}
 }
 

@@ -6,6 +6,7 @@ window.addEventListener('DOMContentLoaded', function () {
     addclassToTopBlock()
     addClassToScroll()
     addClassToHeader()
+    headerBurgerClass()
 })
 
 const lottieAnimation = () => {
@@ -91,15 +92,34 @@ const addClassToScroll = () => {
 
 const addClassToHeader = () => {
     let header = document.querySelector('.header');
-    window.onscroll = function (e) {
-        if (window.scrollY > 16) {
-            header.classList.add('scroll-page')
-        }
-        else {
-            header.classList.remove('scroll-page')
-        }
-    };
+    if (window.screen.width > 1024) {
+        window.onscroll = function (e) {
+            if (window.scrollY > 16) {
+                header.classList.add('scroll-page')
+            }
+            else {
+                header.classList.remove('scroll-page')
+            }
+        };
+    }
+    else {
+        window.onscroll = function (e) {
+            if (window.scrollY > 14) {
+                header.classList.add('scroll-page')
+            }
+            else {
+                header.classList.remove('scroll-page')
+            }
+        };
+    }
 };
+
+const headerBurgerClass = () => {
+    let headerBurger = document.querySelector('.header__burger');
+    headerBurger.onclick = () => {
+        headerBurger.classList.toggle('active')
+    }
+}
 
 
 
