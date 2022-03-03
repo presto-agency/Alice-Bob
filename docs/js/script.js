@@ -116,8 +116,12 @@ const addClassToHeader = () => {
 
 const headerBurgerClass = () => {
     let headerBurger = document.querySelector('.header__burger');
+    let mobileList = document.querySelector('.mobile-list');
+    let body = document.querySelector('body');
     headerBurger.onclick = () => {
-        headerBurger.classList.toggle('active')
+        headerBurger.classList.toggle('active');
+        mobileList.classList.toggle('active');
+        body.classList.toggle('body-lock');
     }
 }
 
