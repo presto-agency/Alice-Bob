@@ -123,10 +123,19 @@
 			background: $bg-cta-orange;
 			transition: 300ms;
 		}
-		&:hover{
-			&:after{
-				opacity: 1;
+		@media (min-width: 1025px) {
+			&:hover{
+				&:after{
+					opacity: 1;
+				}
 			}
+		}
+		@media(max-width: 767px){
+			padding: 0 38px;
+		}
+		@media(max-width: 374px){
+			font-size: 12px;
+			padding: 0 30px;
 		}
 	}
 }

@@ -5,6 +5,14 @@
         font-weight: 400;
         color: $grey-600;
     }
+    @media (max-width: 767px) {
+        p{
+            font-size: 15px;
+        }
+        span{
+            display: block;
+        }
+    }
 }
 .h1{
     font-size: 64px;
@@ -12,6 +20,15 @@
     font-weight: 700;
     color: $white;
     text-transform: uppercase;
+    @media(max-width: 1023px){
+        font-size: 48px;
+    }
+    @media(max-width: 767px){
+        font-size: 36px;
+    }
+    @media(max-width: 359px){
+        font-size: 28px;
+    }
 }
 
 .h2{
