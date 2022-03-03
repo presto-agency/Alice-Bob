@@ -19,7 +19,11 @@ margin: 0 0 200px 0;
 
     .title {
         max-width: 345px;
+        &.title-mod{
+            display: none;
+        }
         &__title-block{
+            color: $black;
             &:first-child{
                 p{
                     text-indent: 58px;
@@ -60,6 +64,8 @@ margin: 0 0 200px 0;
         margin: 56px 0;
         overflow: hidden;
         border-radius: 20px;
+        max-width: 527px;
+        height: 423px;
         img{
             transform: scale(1.2);
             width: 100%;
@@ -128,6 +134,86 @@ margin: 0 0 200px 0;
             p{
                 max-width: 240px;
             }
+        }
+    }
+    @media(max-width: 1439px){
+        &__content{
+            padding: 122px 70px;
+        }
+    }
+    @media(max-width: 1199px){
+        .container{
+            display: flex;
+            justify-content: center;
+        }
+        &__lottie{
+            display: none;
+        }
+        &__content{
+            display: inline-flex;
+            flex-direction: column;
+        }
+        .title{
+            display: none;
+            max-width: 100%;
+            &.title-mod{
+                display: block;
+            }
+        }
+        &__column-content{
+            margin: 42px auto 0 0;
+        }
+    }
+    @media(max-width: 767px){
+        .container{
+            padding: 0 8px;
+        }
+        .title{
+            &__title-block{
+                &:first-child{
+                    p{
+                        text-indent: 15px;
+                    }
+                }
+            }
+        }
+        &__content{
+            padding: 32px 20px;
+            &.active{
+                border-radius: 9px;
+            }
+        }
+        &__link{
+            font-size: 15px;
+            padding: 0 0 0 24px;
+            margin: 0 0 15px 0;
+            &:before{
+                content: '';
+                width: 8px;
+                height: 8px;
+            }
+        }
+        &__item{
+            padding: 16px;
+            margin: 0 0 17px 0;
+            p{
+                font-size: 17px;
+                line-height: 160%;
+            }
+            svg{
+                flex: 0 0 40px;
+                height: 40px;
+                margin: 0 20px 0 0;
+            }
+            &:nth-child(1), &:nth-child(2){
+                p{
+                    max-width: 150px;
+                }
+            }
+        }
+        &__img{
+            height: 294px;
+            margin: 41px 0;
         }
     }
 }
