@@ -4,6 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
     lottieForm()
     removePreloader()
     addclassToTopBlock()
+    addclassToBlock_2()
     addClassToScroll()
     addClassToHeader()
     headerBurgerClass()
@@ -68,8 +69,20 @@ const addclassToTopBlock = () => {
     }
 };
 
+const addclassToBlock_2 = () => {
+    let elements = document.querySelectorAll('.block-2, .block-2__content, .block-2__title, .block-2__title-wrapper');
+    elements.forEach(el => {
+        if (el.getBoundingClientRect().top < window.innerHeight) {
+            addClassTimeout(el)
+        }
+        function addClassTimeout(el) {
+            setTimeout(function () { el.classList.add('active') }, 3500);
+        }
+    })
+};
+
 const addClassToScroll = () => {
-    const elementsPage = document.querySelectorAll('.block-2__content, .block-2__img, .block-2__title-wrapper, .block-3, .block-4, .block-5, .block-6__img, .block-7__list, .title, .footer');
+    const elementsPage = document.querySelectorAll('.block-2__img, .block-2, .block-2__content, .block-2__title-wrapper, .block-3, .block-4, .block-5, .block-6__img, .block-7__list, .title, .footer');
     window.addEventListener("scroll", scrolling, true);
     function scrolling() {
         elementsPage.forEach(el => {

@@ -1,6 +1,5 @@
 .block-1 {
-    margin: 111px 0 0 0;
-    height: 100vh;
+    margin: 111px 0 234px 0;
     &.active{
         .block-1{
             &__description {
@@ -132,7 +131,7 @@
         left: 1px;
     }
     @media(max-width: 1439px){
-        margin: 40px 0 0 0;
+        margin: 40px 0 100px 0;
         &__lottie{
             top: 92px;
             right: -275px;
