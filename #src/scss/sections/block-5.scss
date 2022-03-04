@@ -49,6 +49,9 @@
 
     &__title {
         margin: 0 0 67px 0;
+        &.title-mob{
+            display: none;
+        }
     }
 
     &__title-block {
@@ -70,6 +73,8 @@
     }
     
     &__column {
+        position: relative;
+        z-index: 2;
         opacity: 0;
         flex: 1 0 50%;
         transition: 1s linear 500ms;
@@ -228,6 +233,153 @@
                     opacity: 1;
                 }
             }
+        }
+    }
+    @media(max-width: 1439px){
+        &__content{
+            padding: 60px 40px;
+        }
+        &__lottie{
+            bottom: -118px;
+            left: -17px;
+            width: 483px;
+        }
+    }
+    @media(max-width: 1199px){
+        &__lottie{
+            bottom: -141px;
+            width: 431px;
+        }
+    }
+    @media(max-width: 1023px){
+        margin: 55px 0;
+        &__description{
+            flex-direction: column;
+        }
+        &__text{
+            margin: 0;
+            p{
+                max-width: 100%;
+            }
+        }
+        .form{
+            margin: 40px 0 0 0;
+            max-width: 100%;
+        }
+        &__content{
+            padding: 60px 40px 200px 40px;
+        }
+        &__lottie{
+            bottom: -319px;
+            width: 340px;
+            left: 17px;
+        }
+        &__title{
+            margin: 0 0 40px 0;
+            &.h2{
+                font-size: 30px;
+            }
+        }
+    }
+    @media(max-width: 767px){
+        margin: 55px 0;
+        &__title{
+            display: none;
+            &.title-mob{
+                display: block;
+            }
+        }
+        &.active{
+            .block-5{
+                &__content{
+                    max-width: 425px;
+                }
+            }
+        }
+        &__content{
+            border-radius: 100px;
+            max-width: 400px;
+        }
+        .form{
+            &__button{
+                padding: 19px 50px;
+            }
+        }
+    }
+    @media(max-width: 567px){
+        &__content{
+            &.active{
+                max-width: 567px;
+            }
+        }
+        &__text{
+            p{
+                font-size: 15px;
+            }
+        }
+        .form{
+            &__inputs{
+                input{
+                    height: 56px;
+                }
+            }
+        }
+    }
+    @media(max-width: 474px){
+        &__title{
+            &.h2{
+                font-size: 28px;
+            }
+        }
+        &__lottie{
+            left: -21px;
+        }
+        .form{
+            &__inputs-group{
+            &.top{
+                flex-direction: column;
+                .form{
+                    &__inputs{
+                        flex: initial;
+                        &:first-child{
+                            margin: 0 0 16px 0;
+                        }
+                    }
+                }
+            }
+            }
+            &__button{
+                padding: 19px 36px;
+            }
+        }
+        &__title-block{
+            &:first-child{
+                text-indent: 30px;
+            }
+        }
+    }
+    @media(max-width: 424px){
+        &__content{
+            padding: 29px 13px 152px;
+        }
+        &__lottie{
+            bottom: -293px;
+            width: 290px;
+            left: 3px;
+        }
+    }
+    @media(max-width: 359px){
+        &__title-block{
+            font-size: 24px;
+        }
+        .form{
+            &__button{
+                padding: 19px 26px;
+            }
+        }
+        &__lottie{
+            bottom: -313px;
+            width: 243px;
         }
     }
 }
