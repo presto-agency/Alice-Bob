@@ -160,6 +160,11 @@
             width: 580px;
             height: 276px;
         }
+        &__btn{
+            a{
+                padding: 0 38px;
+            }
+        }
     }
     @media(max-width: 474px){
         &__title{
@@ -173,6 +178,14 @@
                 p{
                     text-indent: 36px;
                 }
+            }
+        }
+    }
+    @media(max-width: 359px){
+        &__btn{
+            a{
+                font-size: 12px;
+                padding: 0 30px;
             }
         }
     }

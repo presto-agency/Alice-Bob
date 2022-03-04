@@ -1475,6 +1475,7 @@ h6 {
   max-width: 640px;
   max-height: 432px;
   margin: 0 0 0 auto;
+  border-radius: 20px;
 }
 
 .block-4__img img {
@@ -1496,6 +1497,10 @@ h6 {
 
 .block-4 .title {
   margin: 0 0 40px 0;
+}
+
+.block-4 .title.title-mob {
+  display: none;
 }
 
 .block-4 .title__title-block:first-child {
@@ -2028,7 +2033,11 @@ h6 {
 
   .block-4__description {
     margin: 51px 0 0 0;
-    min-width: 640px;
+  }
+
+  .block-4__column {
+    max-width: 640px;
+    width: 100%;
   }
 
   .block-4__column:first-child {
@@ -2041,6 +2050,11 @@ h6 {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
+  }
+
+  .block-4__text {
+    max-width: 442px;
+    width: 100%;
   }
 }
 
@@ -2158,8 +2172,8 @@ h6 {
     font-size: 20px;
   }
 
-  .btn a {
-    padding: 0 38px;
+  .container.container-mod {
+    padding: 0px 8px;
   }
 
   .block-1 {
@@ -2174,8 +2188,8 @@ h6 {
     height: 276px;
   }
 
-  .block-2 .container {
-    padding: 0 8px;
+  .block-1__btn a {
+    padding: 0 38px;
   }
 
   .block-2 .title__title-block:first-child p {
@@ -2229,6 +2243,45 @@ h6 {
     height: 294px;
     margin: 41px 0;
   }
+
+  .block-3__description {
+    margin: 38px 0 0 0;
+    padding: 0 16px;
+  }
+
+  .block-3 .title {
+    margin: 0 0 36px 0;
+  }
+
+  .block-3 .title__title-block:first-child {
+    text-indent: 36px;
+  }
+
+  .block-4__description {
+    padding: 0 16px;
+  }
+
+  .block-4 .par span {
+    display: initial;
+  }
+}
+
+@media (max-width: 567px) {
+  .h4 h4 {
+    font-size: 20px;
+  }
+
+  .block-4 .title {
+    display: none;
+  }
+
+  .block-4 .title.title-mob {
+    display: block;
+  }
+
+  .block-4 .title__title-block:first-child {
+    text-indent: 55px;
+  }
 }
 
 @media (max-width: 474px) {
@@ -2255,13 +2308,52 @@ h6 {
   }
 }
 
+@media (max-width: 374px) {
+  .block-3 {
+    margin: 45px 0;
+  }
+
+  .block-3__img {
+    height: 367px;
+  }
+
+  .block-3__img img {
+    height: initial;
+  }
+
+  .block-4 {
+    margin: 45px 0;
+  }
+
+  .block-4__img {
+    height: 262px;
+  }
+
+  .block-4__description {
+    margin: 36px 0 0 0;
+  }
+
+  .block-4__btn a {
+    padding: 0 86px;
+  }
+}
+
 @media (max-width: 359px) {
   .h1 {
     font-size: 28px;
   }
 
-  .btn a {
+  .h2 {
+    font-size: 24px;
+  }
+
+  .block-1__btn a {
     font-size: 12px;
     padding: 0 30px;
+  }
+
+  .block-4__btn a {
+    font-size: 12px;
+    padding: 0 77px;
   }
 }

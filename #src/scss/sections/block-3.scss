@@ -77,5 +77,28 @@
             margin: 51px 0 0 0;
         }
     }
+    @media (max-width: 767px) {
+        &__description{
+            margin: 38px 0 0 0;
+            padding: 0 16px;
+        }
+        .title{
+            margin: 0 0 36px 0;
+            &__title-block{
+                &:first-child{
+                    text-indent: 36px;
+                }
+            }
+        }
+    }
+    @media(max-width: 374px){
+        margin: 45px 0;
+        &__img{
+            height: 367px;
+            img{
+                height: initial;
+            }
+        }
+    }
 }
 
