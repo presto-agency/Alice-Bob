@@ -1095,7 +1095,7 @@ h6 {
           flex-direction: column;
 }
 
-.block-1__title.title-mod {
+.block-1__title.title-mob {
   display: none;
 }
 
@@ -1194,7 +1194,7 @@ h6 {
   max-width: 345px;
 }
 
-.block-2 .title.title-mod {
+.block-2 .title.title-mob {
   display: none;
 }
 
@@ -2006,7 +2006,7 @@ h6 {
     max-width: 100%;
   }
 
-  .block-2 .title.title-mod {
+  .block-2 .title.title-mob {
     display: block;
   }
 
@@ -2397,7 +2397,7 @@ h6 {
     display: none;
   }
 
-  .block-1__title.title-mod {
+  .block-1__title.title-mob {
     display: block;
   }
 

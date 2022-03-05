@@ -24,7 +24,7 @@ transition: 1s ease-in-out;
 
     .title {
         max-width: 345px;
-        &.title-mod{
+        &.title-mob{
             display: none;
         }
         &__title-block{
@@ -163,7 +163,7 @@ transition: 1s ease-in-out;
         .title{
             display: none;
             max-width: 100%;
-            &.title-mod{
+            &.title-mob{
                 display: block;
             }
         }

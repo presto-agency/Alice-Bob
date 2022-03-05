@@ -69,7 +69,7 @@
         margin: 0 0 24px 0;
         display: flex;
         flex-direction: column;
-        &.title-mod{
+        &.title-mob{
             display: none;
         }
     }
@@ -169,7 +169,7 @@
     @media(max-width: 474px){
         &__title{
             display: none;
-            &.title-mod{
+            &.title-mob{
                 display: block;
             }
         }
