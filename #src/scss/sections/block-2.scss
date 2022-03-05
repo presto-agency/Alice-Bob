@@ -220,4 +220,9 @@ transition: 1s ease-in-out;
             margin: 41px 0;
         }
     }
+    @media (max-width: 374px) {
+        &__img{
+            height: 262px;
+        }
+    }
 }

@@ -1,6 +1,5 @@
 .block-7 {
     margin: 200px 0 100px 0;
-
     &__list {
         display: flex;
         opacity: 0;
@@ -62,5 +61,33 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    @media(max-width: 1439px){
+        &__list{
+            margin: 32px auto 0;
+            max-width: 656px;
+        }
+        &__item{
+            width: calc(100% / 2);
+        }
+    }
+    @media(max-width: 767px){
+        margin: 80px 0;
+        &__list{
+            max-width: 328px;
+        }
+        &__item{
+            width: 100%;
+        }
+    }
+    @media (max-width: 374px) {
+        &__list{
+            max-width: 248px;
+        }
+        &__item{
+            width: 100%;
+            max-width: 248px;
+            height: 248px;
+        }
     }
 }

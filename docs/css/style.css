@@ -1817,6 +1817,8 @@ h6 {
   max-width: 100%;
   max-height: 525px;
   margin: 64px 0 0 0;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .block-6__img img {
@@ -1840,6 +1842,10 @@ h6 {
 
 .block-6 .title {
   color: #FFFFFF;
+}
+
+.block-6 .title.title-mob {
+  display: none;
 }
 
 .block-6 .title__title-block:first-child {
@@ -1965,6 +1971,15 @@ h6 {
     bottom: -118px;
     left: -17px;
     width: 483px;
+  }
+
+  .block-7__list {
+    margin: 32px auto 0;
+    max-width: 656px;
+  }
+
+  .block-7__item {
+    width: 50%;
   }
 }
 
@@ -2216,6 +2231,18 @@ h6 {
   .block-5__title.h2 {
     font-size: 30px;
   }
+
+  .block-6 {
+    margin: 94px 0 80px 0;
+  }
+
+  .block-6 .title.h2 {
+    font-size: 28px;
+  }
+
+  .block-6__img {
+    margin: 32px 0 0 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -2356,6 +2383,18 @@ h6 {
   .block-5 .form__button {
     padding: 19px 50px;
   }
+
+  .block-7 {
+    margin: 80px 0;
+  }
+
+  .block-7__list {
+    max-width: 328px;
+  }
+
+  .block-7__item {
+    width: 100%;
+  }
 }
 
 @media (max-width: 567px) {
@@ -2385,6 +2424,23 @@ h6 {
 
   .block-5 .form__inputs input {
     height: 56px;
+  }
+
+  .block-6 .title {
+    display: none;
+  }
+
+  .block-6 .title.title-mob {
+    display: block;
+  }
+
+  .block-6 .title__title-block:first-child {
+    text-indent: 62px;
+  }
+
+  .block-6__img {
+    max-height: 100%;
+    height: 184px;
   }
 }
 
@@ -2460,6 +2516,10 @@ h6 {
 }
 
 @media (max-width: 374px) {
+  .block-2__img {
+    height: 262px;
+  }
+
   .block-3 {
     margin: 45px 0;
   }
@@ -2486,6 +2546,16 @@ h6 {
 
   .block-4__btn a {
     padding: 0 86px;
+  }
+
+  .block-7__list {
+    max-width: 248px;
+  }
+
+  .block-7__item {
+    width: 100%;
+    max-width: 248px;
+    height: 248px;
   }
 }
 
@@ -2519,5 +2589,9 @@ h6 {
   .block-5__lottie {
     bottom: -313px;
     width: 243px;
+  }
+
+  .block-6 .title.h2 {
+    font-size: 24px;
   }
 }
