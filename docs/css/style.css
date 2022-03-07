@@ -720,6 +720,12 @@ h6 {
   }
 }
 
+.header.header-mod {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+}
+
 .header.scroll-page {
   padding: 16px 0 16px 0;
 }

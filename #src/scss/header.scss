@@ -22,6 +22,9 @@
             }
         }
     }
+    &.header-mod{
+        transform: translateY(0);
+    }
     &.scroll-page{
         padding: 16px 0 16px 0;
     }
