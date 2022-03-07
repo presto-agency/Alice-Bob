@@ -1996,6 +1996,11 @@ h6 {
   text-align: center;
 }
 
+.error__title {
+  position: relative;
+  z-index: 2;
+}
+
 .error__title p {
   color: #FFFFFF;
   font-weight: 700;
@@ -2003,6 +2008,8 @@ h6 {
 }
 
 .error__description {
+  position: relative;
+  z-index: 2;
   max-width: 293px;
   margin: 0 auto 40px auto;
 }
@@ -2013,6 +2020,8 @@ h6 {
 }
 
 .error__btn {
+  position: relative;
+  z-index: 2;
   max-width: 202px;
   margin: 0 auto;
 }
