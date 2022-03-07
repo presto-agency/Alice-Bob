@@ -30,12 +30,22 @@
                 }
                 &:nth-child(2){
                     p{
-                        animation-delay: 510ms;
+                        animation-delay: 500ms;
                     }
                 }
                 &:nth-child(3){
                     p{
-                        animation-delay: 520ms;
+                        animation-delay: 600ms;
+                    }
+                }
+                &:nth-child(4){
+                    p{
+                        animation-delay: 700ms;
+                    }
+                }
+                &:nth-child(5){
+                    p{
+                        animation-delay: 800ms;
                     }
                 }
             }
