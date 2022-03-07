@@ -1839,10 +1839,6 @@ h6 {
   transition: 300ms;
 }
 
-.block-5 .form__button:hover:after {
-  opacity: 1;
-}
-
 .block-6 {
   margin: 200px 0;
 }
@@ -1970,6 +1966,10 @@ h6 {
   }
 
   .btn a:hover:after {
+    opacity: 1;
+  }
+
+  .block-5 .form__button:hover:after {
     opacity: 1;
   }
 }

@@ -240,9 +240,11 @@
                 background: $bg-cta-orange;
                 transition: 300ms;
             }
-            &:hover{
-                &:after{
-                    opacity: 1;
+            @media (min-width: 1025px) {
+                &:hover{
+                    &:after{
+                        opacity: 1;
+                    }
                 }
             }
         }
