@@ -30,12 +30,10 @@ margin: 200px 0;
     }
 
     &__btn {
+        max-width: 286px;
         margin: 32px 0 0 0;
         transform: translateY(-20px);
         transition: 1s;
-        a{
-            padding: 0 75px;
-        }
     }
 
     &__img {
@@ -124,17 +122,11 @@ margin: 200px 0;
         &__description{
             margin: 36px 0 0 0;
         }
-        &__btn{
-            a{
-                padding: 0 86px;
-            }
-        }
     }
     @media (max-width: 359px) {
         &__btn{
             a{
                 font-size: 12px;
-                padding: 0 77px;
             }
         }
     }

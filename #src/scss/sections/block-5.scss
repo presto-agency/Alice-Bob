@@ -199,9 +199,11 @@
             font-weight: 700;
             color: $white;
             text-transform: uppercase;
-            padding: 19px 64px;
+            padding: 19px 10px;
             border-radius: 99px;
             margin: 41px 0 0 0;
+            width: 100%;
+            max-width: 351px;
             span{
                 position: relative;
                 z-index: 2;
@@ -300,11 +302,6 @@
             border-radius: 100px;
             max-width: 400px;
         }
-        .form{
-            &__button{
-                padding: 19px 50px;
-            }
-        }
     }
     @media(max-width: 567px){
         &__content{
@@ -336,20 +333,17 @@
         }
         .form{
             &__inputs-group{
-            &.top{
-                flex-direction: column;
-                .form{
-                    &__inputs{
-                        flex: initial;
-                        &:first-child{
-                            margin: 0 0 16px 0;
+                &.top{
+                    flex-direction: column;
+                    .form{
+                        &__inputs{
+                            flex: initial;
+                            &:first-child{
+                                margin: 0 0 16px 0;
+                            }
                         }
                     }
                 }
-            }
-            }
-            &__button{
-                padding: 19px 36px;
             }
         }
         &__title-block{
@@ -371,11 +365,6 @@
     @media(max-width: 359px){
         &__title-block{
             font-size: 24px;
-        }
-        .form{
-            &__button{
-                padding: 19px 26px;
-            }
         }
         &__lottie{
             bottom: -313px;

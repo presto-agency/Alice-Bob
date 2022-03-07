@@ -265,11 +265,16 @@ h6 {
   fill: #FFFFFF;
 }
 
+.btn {
+  width: 100%;
+  max-width: 351px;
+}
+
 .btn a {
   position: relative;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -277,14 +282,14 @@ h6 {
       -ms-flex-align: center;
           align-items: center;
   font-size: 14px;
+  height: 56px;
   line-height: 17px;
   font-weight: 700;
   text-transform: uppercase;
   position: relative;
   color: #FFFFFF;
   border-radius: 99px;
-  min-height: 56px;
-  padding: 0 58px;
+  padding: 0 10px;
   letter-spacing: 0.03em;
 }
 
@@ -1459,6 +1464,7 @@ h6 {
 }
 
 .block-4__btn {
+  max-width: 286px;
   margin: 32px 0 0 0;
   -webkit-transform: translateY(-20px);
       -ms-transform: translateY(-20px);
@@ -1466,10 +1472,6 @@ h6 {
   -webkit-transition: 1s;
   -o-transition: 1s;
   transition: 1s;
-}
-
-.block-4__btn a {
-  padding: 0 75px;
 }
 
 .block-4__img {
@@ -1768,9 +1770,11 @@ h6 {
   font-weight: 700;
   color: #FFFFFF;
   text-transform: uppercase;
-  padding: 19px 64px;
+  padding: 19px 10px;
   border-radius: 99px;
   margin: 41px 0 0 0;
+  width: 100%;
+  max-width: 351px;
 }
 
 .block-5 .form__button span {
@@ -2286,10 +2290,6 @@ h6 {
     height: 276px;
   }
 
-  .block-1__btn a {
-    padding: 0 38px;
-  }
-
   .block-2 .title__title-block:first-child p {
     text-indent: 15px;
   }
@@ -2382,10 +2382,6 @@ h6 {
   .block-5__content {
     border-radius: 100px;
     max-width: 400px;
-  }
-
-  .block-5 .form__button {
-    padding: 19px 50px;
   }
 
   .block-7 {
@@ -2490,10 +2486,6 @@ h6 {
     margin: 0 0 16px 0;
   }
 
-  .block-5 .form__button {
-    padding: 19px 36px;
-  }
-
   .block-5__title-block:first-child {
     text-indent: 30px;
   }
@@ -2548,10 +2540,6 @@ h6 {
     margin: 36px 0 0 0;
   }
 
-  .block-4__btn a {
-    padding: 0 86px;
-  }
-
   .block-7__list {
     max-width: 248px;
   }
@@ -2574,20 +2562,14 @@ h6 {
 
   .block-1__btn a {
     font-size: 12px;
-    padding: 0 30px;
   }
 
   .block-4__btn a {
     font-size: 12px;
-    padding: 0 77px;
   }
 
   .block-5__title-block {
     font-size: 24px;
-  }
-
-  .block-5 .form__button {
-    padding: 19px 26px;
   }
 
   .block-5__lottie {

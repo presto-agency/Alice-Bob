@@ -160,11 +160,6 @@
             width: 580px;
             height: 276px;
         }
-        &__btn{
-            a{
-                padding: 0 38px;
-            }
-        }
     }
     @media(max-width: 474px){
         &__title{
@@ -185,7 +180,6 @@
         &__btn{
             a{
                 font-size: 12px;
-                padding: 0 30px;
             }
         }
     }

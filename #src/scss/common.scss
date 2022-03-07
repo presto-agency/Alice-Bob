@@ -87,20 +87,22 @@
 }
 
 .btn{
+	width: 100%;
+	max-width: 351px;
 	a{
 		position: relative;
-		display: inline-flex;
+		display: flex;
 		justify-content: center;
 		align-items: center;
 		font-size: 14px;
+		height: 56px;
 		line-height: 17px;
 		font-weight: 700;
 		text-transform: uppercase;
 		position: relative;
 		color: $white;
 		border-radius: 99px;
-		min-height: 56px;
-		padding: 0 58px;
+		padding: 0 10px;
 		letter-spacing: 0.03em;
 		span{
 			position: relative;
