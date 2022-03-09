@@ -70,15 +70,17 @@ const addclassToTopBlock = () => {
 };
 
 const addclassToBlock_2 = () => {
-    let elements = document.querySelectorAll('.block-2, .block-2__content, .block-2__title, .block-2__title-wrapper');
-    elements.forEach(el => {
-        if (el.getBoundingClientRect().top < window.innerHeight) {
-            addClassTimeout(el)
+    setTimeout(() => {
+        let elements = document.querySelectorAll('.block-2, .block-2__content, .block-2__title');
+        let firstTitle = document.querySelector('.block-2__title-wrapper');
+        let block_2 = document.querySelector('.block-2');
+        if (block_2.getBoundingClientRect().top < window.innerHeight) {
+            elements.forEach(el => {
+                el.classList.add('active');
+                firstTitle.classList.add('active');
+            })
         }
-        function addClassTimeout(el) {
-            setTimeout(function () { el.classList.add('active') }, 3500);
-        }
-    })
+    }, 3500);
 };
 
 const addClassToScroll = () => {
