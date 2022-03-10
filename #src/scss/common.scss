@@ -356,3 +356,124 @@
 		display: flex;
 	}
 }
+
+.nf-form-cont {
+}
+.nf-form-title {
+}
+.nf-form-wrap {
+}
+.ninja-forms-form-wrap {
+}
+.nf-response-msg {
+}
+.nf-debug-msg {
+}
+.nf-before-form {
+}
+.nf-form-layout {
+}
+.nf-before-form-content {
+}
+.nf-form-fields-required {
+}
+.ninja-forms-req-symbol {
+}
+.nf-form-content {
+}
+.nf-field-container {
+}
+.textbox-container {
+}
+.label-above {
+}
+.form {
+
+		&__inputs {
+		}
+
+		&__switch-button {
+		}
+
+		&__checkbox {
+		}
+}
+.nf-before-field {
+}
+.nf-field {
+}
+.field-wrap {
+}
+.textbox-wrap {
+}
+.nf-field-label {
+}
+.nf-field-element {
+	input{
+		height: 59px;
+		border-radius: 51px;
+		border: 1px solid $grey-600;
+		padding: 10px 24px;
+		width: 100%;
+		font-size: 12px;
+		color: $grey-800;
+		font-weight: 400;
+		&::placeholder{
+			color: $grey-600;
+		}
+		&:focus{
+			border: 1px solid $grey-800;
+		}
+	}
+}
+.ninja-forms-field {
+}
+.nf-element {
+}
+.nf-after-field {
+}
+.nf-input-limit {
+}
+.nf-error-wrap {
+}
+.nf-error {
+}
+.lastname-container {
+}
+.lastname-wrap {
+}
+.email-container {
+}
+.email-wrap {
+}
+.phone-container {
+}
+.phone-wrap {
+}
+.checkbox-container {
+}
+.label-right {
+}
+.checkbox-wrap {
+}
+.fa {
+}
+.fa-info-circle {
+}
+.nf-help {
+}
+.submit-container {
+}
+.submit-wrap {
+}
+.nf-after-form-content {
+}
+.nf-form-errors {
+}
+.nf-form-hp {
+}
+.nf-field-hp {
+}
+.nf-after-form {
+}
+

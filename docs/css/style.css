@@ -665,6 +665,41 @@ h6 {
   color: #FFFFFF;
 }
 
+.nf-field-element input {
+  height: 59px;
+  border-radius: 51px;
+  border: 1px solid #C9CACA;
+  padding: 10px 24px;
+  width: 100%;
+  font-size: 12px;
+  color: #585857;
+  font-weight: 400;
+}
+
+.nf-field-element input::-webkit-input-placeholder {
+  color: #C9CACA;
+}
+
+.nf-field-element input::-moz-placeholder {
+  color: #C9CACA;
+}
+
+.nf-field-element input:-ms-input-placeholder {
+  color: #C9CACA;
+}
+
+.nf-field-element input::-ms-input-placeholder {
+  color: #C9CACA;
+}
+
+.nf-field-element input::placeholder {
+  color: #C9CACA;
+}
+
+.nf-field-element input:focus {
+  border: 1px solid #585857;
+}
+
 .header {
   position: fixed;
   z-index: 10;
