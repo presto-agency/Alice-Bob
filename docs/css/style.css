@@ -1372,6 +1372,72 @@ h6 {
   margin: 200px 0;
 }
 
+.block-3.reverse .block-3__column:first-child {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+.block-3.reverse .block-3__column:last-child {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.block-3.reverse .block-3__img {
+  overflow: hidden;
+  max-width: 640px;
+  max-height: 432px;
+  margin: 0 0 0 auto;
+  border-radius: 30px;
+}
+
+.block-3.reverse .block-3__img img {
+  border-radius: 30px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.block-3.reverse .block-3__text {
+  max-width: 472px;
+}
+
+.block-3.reverse .block-3__btn {
+  max-width: 286px;
+  margin: 32px 0 0 0;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+}
+
+.block-3.reverse .block-3__description {
+  margin: 40px 30px 0 0;
+  max-width: 100%;
+}
+
+.block-3.reverse .block-3__description .title {
+  margin: 0 0 40px 0;
+}
+
+.block-3.reverse .block-3__description .title.title-mob {
+  display: none;
+}
+
+.block-3.reverse .block-3__description .title__title-block:first-child {
+  text-indent: 107px;
+}
+
 .block-3__content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1395,16 +1461,23 @@ h6 {
   opacity: 1;
 }
 
+.block-3.active .block-3__btn {
+  -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+          transform: translateY(0);
+  opacity: 1;
+}
+
 .block-3__img {
   overflow: hidden;
   max-width: 528px;
   max-height: 629px;
-  border-radius: 20px;
+  border-radius: 30px;
   margin: 0 30px 0 0;
 }
 
 .block-3__img img {
-  border-radius: 20px;
+  border-radius: 30px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1504,11 +1577,11 @@ h6 {
   max-width: 640px;
   max-height: 432px;
   margin: 0 0 0 auto;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 
 .block-4__img img {
-  border-radius: 20px;
+  border-radius: 30px;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -2249,6 +2322,46 @@ h6 {
     margin: 42px auto 0 0;
   }
 
+  .block-3.reverse .block-3 {
+    margin: 100px 0;
+  }
+
+  .block-3.reverse .block-3__content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .block-3.reverse .block-3__description {
+    margin: 51px 0 0 0;
+  }
+
+  .block-3.reverse .block-3__column {
+    max-width: 640px;
+    width: 100%;
+  }
+
+  .block-3.reverse .block-3__column:first-child {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .block-3.reverse .block-3__column:last-child {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .block-3.reverse .block-3__text {
+    max-width: 442px;
+    width: 100%;
+  }
+
   .block-3 {
     margin: 100px 0;
   }
@@ -2557,6 +2670,14 @@ h6 {
     margin: 41px 0;
   }
 
+  .block-3.reverse .block-3__description {
+    padding: 0 16px;
+  }
+
+  .block-3.reverse .block-3 .par span {
+    display: initial;
+  }
+
   .block-3__description {
     margin: 38px 0 0 0;
     padding: 0 16px;
@@ -2631,6 +2752,18 @@ h6 {
 @media (max-width: 567px) {
   .h4 h4 {
     font-size: 20px;
+  }
+
+  .block-3.reverse .block-3__description .title {
+    display: none;
+  }
+
+  .block-3.reverse .block-3__description .title.title-mob {
+    display: block;
+  }
+
+  .block-3.reverse .block-3__description .title__title-block:first-child {
+    text-indent: 55px;
   }
 
   .block-4 .title {
@@ -2747,6 +2880,18 @@ h6 {
     height: 262px;
   }
 
+  .block-3.reverse .block-3 {
+    margin: 45px 0 80px 0;
+  }
+
+  .block-3.reverse .block-3__img {
+    height: 262px;
+  }
+
+  .block-3.reverse .block-3__description {
+    margin: 36px 0 0 0;
+  }
+
   .block-3 {
     margin: 45px 0;
   }
@@ -2792,6 +2937,10 @@ h6 {
   }
 
   .block-1__btn a {
+    font-size: 12px;
+  }
+
+  .block-3.reverse .block-3__btn a {
     font-size: 12px;
   }
 
