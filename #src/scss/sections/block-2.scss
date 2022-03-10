@@ -93,13 +93,14 @@ transition: 1s ease-in-out;
     &__link {
         position: relative;
         font-size: 17px;
+        font-weight: 400;
         line-height: 160%;
         padding: 0 0 0 36px;
         margin: 0 0 9px 0;
         &:last-child{
             margin: 0;
         }
-        span{
+        strong{
             font-weight: 700;
         }
         &:before{
@@ -124,10 +125,9 @@ transition: 1s ease-in-out;
         &:last-child{
             margin: 0;
         }
-        svg{
+        img{
             flex: 0 0 64px;
             height: 64px;
-            fill: $white;
             margin: 0 32px 0 0;
         }
         p{

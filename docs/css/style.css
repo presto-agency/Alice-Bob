@@ -259,10 +259,11 @@ h6 {
   height: 100%;
 }
 
-.logo svg {
-  width: 107px;
-  height: 69px;
-  fill: #FFFFFF;
+.logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 .btn {
@@ -601,7 +602,7 @@ h6 {
   margin: 0;
 }
 
-.text-mod p span {
+.text-mod p strong {
   color: #FFFFFF;
   font-weight: 700;
 }
@@ -1155,7 +1156,7 @@ h6 {
   opacity: 0;
 }
 
-.block-1__description p span {
+.block-1__description p strong {
   font-weight: 700;
   color: #FFFFFF;
 }
@@ -1303,6 +1304,7 @@ h6 {
 .block-2__link {
   position: relative;
   font-size: 17px;
+  font-weight: 400;
   line-height: 160%;
   padding: 0 0 0 36px;
   margin: 0 0 9px 0;
@@ -1312,7 +1314,7 @@ h6 {
   margin: 0;
 }
 
-.block-2__link span {
+.block-2__link strong {
   font-weight: 700;
 }
 
@@ -1346,12 +1348,11 @@ h6 {
   margin: 0;
 }
 
-.block-2__item svg {
+.block-2__item img {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 64px;
           flex: 0 0 64px;
   height: 64px;
-  fill: #FFFFFF;
   margin: 0 32px 0 0;
 }
 
@@ -1923,7 +1924,16 @@ h6 {
   width: 25%;
 }
 
-.block-7__item svg {
+.block-7__item a {
+  position: relative;
+  z-index: 2;
+  border-radius: 50%;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.block-7__item a img {
   position: absolute;
   z-index: 2;
   top: 50%;
@@ -1939,22 +1949,22 @@ h6 {
   position: absolute;
 }
 
-.block-7__item:nth-child(1) svg {
+.block-7__item:nth-child(1) img {
   width: 200px;
   height: 28px;
 }
 
-.block-7__item:nth-child(2) svg {
+.block-7__item:nth-child(2) img {
   width: 71px;
   height: 50px;
 }
 
-.block-7__item:nth-child(3) svg {
+.block-7__item:nth-child(3) img {
   width: 40px;
   height: 58px;
 }
 
-.block-7__item:nth-child(4) svg {
+.block-7__item:nth-child(4) img {
   width: 239px;
   height: 20px;
 }
@@ -2320,11 +2330,6 @@ h6 {
   .logo {
     height: 47px;
     width: 72px;
-  }
-
-  .logo svg {
-    width: 72px;
-    height: 47px;
   }
 
   .mobile-list {
