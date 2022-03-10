@@ -1,22 +1,9 @@
 .pop-up {
-    position: fixed;
-    z-index: 12;
-    width: 100vw;
-    height: 100vh;
-    background: rgba($color: $black , $alpha: 0.7);
-    pointer-events: none;
-    opacity: 0;
-    transition: 300ms;
-    &.active{
-        opacity: 1;
-        pointer-events: visible;
-    }
+    margin: 40px 0;
     &__container {
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100vh;
-        padding: 0 20px;
     }
 
     &__title{
@@ -29,7 +16,7 @@
         max-width: 800px;
         width: 100%;
         min-height: 384px;
-        background: $white;
+        background: $grey-600;
         border-radius: 20px;
         padding: 80px 48px;
     }
@@ -39,7 +26,8 @@
         z-index: 2;
         max-width: 540px;
         p{
-            color: $grey-800;
+            color: $black;
+            font-weight: 700;
             &:first-child{
                 margin: 16px 0 0 0;
             }
@@ -71,6 +59,9 @@
     @media(max-width: 767px){
         &__bg{
             display: none;
+        }
+        &__content{
+            min-height: initial;
         }
     }
     @media(max-width: 767px){
