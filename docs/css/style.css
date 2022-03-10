@@ -397,10 +397,9 @@ h6 {
   }
 }
 
-.preloader__title svg {
+.preloader__title img {
   width: 76px;
   height: 39px;
-  fill: #FFFFFF;
 }
 
 .preloader__title:before {
