@@ -666,38 +666,38 @@ h6 {
 }
 
 .nf-field-element input {
-  height: 59px;
-  border-radius: 51px;
-  border: 1px solid #C9CACA;
-  padding: 10px 24px;
-  width: 100%;
-  font-size: 12px;
-  color: #585857;
-  font-weight: 400;
+  height: 59px !important;
+  border-radius: 51px !important;
+  border: 1px solid #C9CACA !important;
+  padding: 10px 24px !important;
+  width: 100% !important;
+  font-size: 12px !important;
+  color: #585857 !important;
+  font-weight: 400 !important;
 }
 
 .nf-field-element input::-webkit-input-placeholder {
-  color: #C9CACA;
+  color: #C9CACA !important;
 }
 
 .nf-field-element input::-moz-placeholder {
-  color: #C9CACA;
+  color: #C9CACA !important;
 }
 
 .nf-field-element input:-ms-input-placeholder {
-  color: #C9CACA;
+  color: #C9CACA !important;
 }
 
 .nf-field-element input::-ms-input-placeholder {
-  color: #C9CACA;
+  color: #C9CACA !important;
 }
 
 .nf-field-element input::placeholder {
-  color: #C9CACA;
+  color: #C9CACA !important;
 }
 
 .nf-field-element input:focus {
-  border: 1px solid #585857;
+  border: 1px solid #585857 !important;
 }
 
 .header {
