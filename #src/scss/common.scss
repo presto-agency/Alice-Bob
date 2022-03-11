@@ -237,7 +237,10 @@
 	border-radius: 50%;
 	width: 240px;
 	height: 240px;
-	background: $bg-circle;
+	background: url(../img/ellipse.svg);
+	background-size: 240px 240px;
+	background-repeat: no-repeat;
+	background-position: center;
 }
 
 .title{
