@@ -700,15 +700,24 @@ h6 {
   color: #585857 !important;
 }
 
-.nf-checked-label {
+.nf-field-label #nf-label-field-8 {
   font-size: 13px !important;
   line-height: 120% !important;
   color: #C9CACA !important;
 }
 
-.nf-checked-label a {
+.nf-field-label #nf-label-field-8 a {
   color: #F57A17 !important;
   text-decoration: underline !important;
+}
+
+.nf-field-label #nf-label-field-8:before {
+  left: -26px !important;
+  font-size: 15px !important;
+  color: #FFFFFF !important;
+  width: 16px !important;
+  height: 16px !important;
+  background: #F57A17 !important;
 }
 
 .nf-checked-label:after {
@@ -779,6 +788,21 @@ h6 {
   background: -o-linear-gradient(left, #F47917 0%, #2A3F8F 100%) !important;
   background: linear-gradient(90deg, #F47917 0%, #2A3F8F 100%) !important;
   cursor: pointer !important;
+}
+
+.nf-error.field-wrap .nf-field-element:after {
+  top: 50% !important;
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
+  right: 24px !important;
+}
+
+.nf-pass.field-wrap .nf-field-element:after {
+  top: 50% !important;
+  -webkit-transform: translateY(-50%) !important;
+      -ms-transform: translateY(-50%) !important;
+          transform: translateY(-50%) !important;
 }
 
 .header {
