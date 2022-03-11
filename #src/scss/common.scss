@@ -440,10 +440,12 @@
 	border-radius: 5px!important;
 	border: 2px solid $orange!important;
 	background: $white!important;
+	cursor: pointer;
 }
 
 .checkbox-wrap .nf-field-label label:before{
 	color: $orange!important;
+	cursor: pointer;
 }
 
 .nf-after-form-content{

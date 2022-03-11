@@ -774,10 +774,12 @@ h6 {
   border-radius: 5px !important;
   border: 2px solid #F57A17 !important;
   background: #FFFFFF !important;
+  cursor: pointer;
 }
 
 .checkbox-wrap .nf-field-label label:before {
   color: #F57A17 !important;
+  cursor: pointer;
 }
 
 .nf-after-form-content {
