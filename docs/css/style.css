@@ -665,29 +665,6 @@ h6 {
   color: #FFFFFF;
 }
 
-.nf-fields-wrap {
-  display: grid !important;
-  grid-template-columns: 1fr 1fr !important;
-  grid-template-areas: "block-1 block-2" "block-3 block-3" "block-4 block-4" !important;
-}
-
-.nf-fields-wrap .nf-field:nth-child(1) {
-  margin: 0 16px 0 0 !important;
-  grid-area: block-1 !important;
-}
-
-.nf-fields-wrap .nf-field:nth-child(2) {
-  grid-area: block-2 !important;
-}
-
-.nf-fields-wrap .nf-field:nth-child(3) {
-  grid-area: block-3 !important;
-}
-
-.nf-fields-wrap .nf-field:nth-child(4) {
-  grid-area: block-4 !important;
-}
-
 .nf-form-fields-required {
   font-size: 18px !important;
   font-weight: 700 !important;
@@ -714,25 +691,9 @@ h6 {
 .nf-field-label #nf-label-field-8:before {
   left: -26px !important;
   font-size: 15px !important;
-  color: #FFFFFF !important;
+  color: #F57A17 !important;
   width: 16px !important;
   height: 16px !important;
-  background: #F57A17 !important;
-}
-
-.nf-checked-label:after {
-  border-radius: 5px !important;
-  border: 2px solid #F57A17 !important;
-  background: #FFFFFF !important;
-}
-
-.nf-checked-label:before {
-  left: -26px !important;
-  font-size: 15px !important;
-  color: #FFFFFF !important;
-  width: 16px !important;
-  height: 16px !important;
-  background: #F57A17 !important;
 }
 
 .nf-field-element input {
@@ -796,6 +757,10 @@ h6 {
       -ms-transform: translateY(-50%) !important;
           transform: translateY(-50%) !important;
   right: 24px !important;
+  height: 20px !important;
+  width: 20px !important;
+  line-height: 21px !important;
+  font-size: 15px !important;
 }
 
 .nf-pass.field-wrap .nf-field-element:after {
@@ -803,6 +768,26 @@ h6 {
   -webkit-transform: translateY(-50%) !important;
       -ms-transform: translateY(-50%) !important;
           transform: translateY(-50%) !important;
+}
+
+.checkbox-wrap .nf-field-label label:after {
+  border-radius: 5px !important;
+  border: 2px solid #F57A17 !important;
+  background: #FFFFFF !important;
+}
+
+.checkbox-wrap .nf-field-label label:before {
+  color: #F57A17 !important;
+}
+
+.nf-after-form-content {
+  position: absolute !important;
+  bottom: -5px !important;
+}
+
+.nf-after-field {
+  position: absolute !important;
+  bottom: -21px !important;
 }
 
 .header {

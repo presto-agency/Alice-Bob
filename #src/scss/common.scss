@@ -356,27 +356,6 @@
 		display: flex;
 	}
 }
-.nf-fields-wrap{
-	display: grid!important;
-	grid-template-columns: 1fr 1fr!important;
-	grid-template-areas: 'block-1 block-2' 'block-3 block-3' 'block-4 block-4'!important;
-	.nf-field{
-		&:nth-child(1){
-			margin: 0 16px 0 0!important;
-			grid-area: block-1!important;
-		}
-		&:nth-child(2){
-			grid-area: block-2!important;
-		}
-		&:nth-child(3){
-			grid-area: block-3!important;
-		}
-		&:nth-child(4){
-			grid-area: block-4!important;
-		}
-	}
-
-}
 .nf-form-fields-required{
 	font-size: 18px!important;
 	font-weight: 700!important;
@@ -396,29 +375,13 @@
 			color: $orange!important;
 			text-decoration: underline!important;
 		}
-			&:before{
+		&:before{
 		left: -26px!important;
 		font-size: 15px!important;
-		color: $white!important;
+		color: $orange!important;
 		width: 16px!important;
 		height: 16px!important;
-		background: $orange!important;
 	}
-	}
-}
-.nf-checked-label{
-	&:after{
-		border-radius: 5px!important;
-		border: 2px solid $orange!important;
-		background: $white!important;
-	}
-	&:before{
-		left: -26px!important;
-		font-size: 15px!important;
-		color: $white!important;
-		width: 16px!important;
-		height: 16px!important;
-		background: $orange!important;
 	}
 }
 
@@ -462,11 +425,35 @@
 	top: 50%!important;
 	transform: translateY(-50%)!important;
     right: 24px!important;
+	height: 20px!important;
+    width: 20px!important;
+    line-height: 21px!important;
+	font-size: 15px!important;
 }
 
 .nf-pass.field-wrap .nf-field-element:after{
 	top: 50%!important;
 	transform: translateY(-50%)!important;
+}
+
+.checkbox-wrap .nf-field-label label:after{
+	border-radius: 5px!important;
+	border: 2px solid $orange!important;
+	background: $white!important;
+}
+
+.checkbox-wrap .nf-field-label label:before{
+	color: $orange!important;
+}
+
+.nf-after-form-content{
+	position: absolute!important;
+	bottom: -5px!important;
+}
+
+.nf-after-field{
+	position: absolute!important;
+    bottom: -21px!important;
 }
 
 
