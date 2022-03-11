@@ -469,6 +469,12 @@
 	color: $grey-800!important;
 	padding: 16px!important;
 	max-width: 352px!important;
+	border-radius: 20px!important;
+	box-shadow: 0px 1px 11px rgba(0, 0, 0, 0.16)!important;
+	a{
+		color: $orange!important;
+		text-decoration: underline!important;
+	}
 }
 
 
