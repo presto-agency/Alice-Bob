@@ -665,6 +665,29 @@ h6 {
   color: #FFFFFF;
 }
 
+.nf-fields-wrap {
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  grid-template-areas: "block-1 block-2" "block-3 block-3" "block-4 block-4" !important;
+}
+
+.nf-fields-wrap .nf-field:nth-child(1) {
+  margin: 0 16px 0 0 !important;
+  grid-area: block-1 !important;
+}
+
+.nf-fields-wrap .nf-field:nth-child(2) {
+  grid-area: block-2 !important;
+}
+
+.nf-fields-wrap .nf-field:nth-child(3) {
+  grid-area: block-3 !important;
+}
+
+.nf-fields-wrap .nf-field:nth-child(4) {
+  grid-area: block-4 !important;
+}
+
 .nf-form-fields-required {
   font-size: 18px !important;
   font-weight: 700 !important;
