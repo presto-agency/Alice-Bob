@@ -204,6 +204,7 @@
     
         &__button {
             position: relative;
+            display: block;
             font-size: 14px;
             line-height: 120%;
             font-weight: 700;
@@ -214,39 +215,43 @@
             margin: 41px 0 0 0;
             width: 100%;
             max-width: 351px;
-            span{
-                position: relative;
-                z-index: 2;
-            }
-            &:before{
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 99px;
-                background: $bg-cta;
-            }
-            &:after{
-                content: '';
-                position: absolute;
-                opacity: 0;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 100%;
-                border-radius: 99px;
-                background: $bg-cta-orange;
-                transition: 300ms;
-            }
-            @media (min-width: 1025px) {
-                &:hover{
-                    &:after{
-                        opacity: 1;
-                    }
-                }
-            }
+            background: $bg-cta;
+            cursor: pointer;
+            // &:before{
+            //         content: '';
+            //         position: absolute;
+            //         z-index: -2;
+            //         top: 0;
+            //         left: 0;
+            //         width: 100%;
+            //         height: 100%;
+            //         border-radius: 99px;
+            //         background: $bg-cta;
+            //         transition: 300ms;
+            // }
+            // &:after{
+            //     content: '';
+            //     position: absolute;
+            //     z-index: -1;
+            //     opacity: 0;
+            //     top: 0;
+            //     left: 0;
+            //     width: 100%;
+            //     height: 100%;
+            //     border-radius: 99px;
+            //     background: $bg-cta-orange;
+            //     transition: 300ms;
+            // }
+            // @media (min-width: 1025px) {
+            //     &:hover{
+            //         &:after{
+            //             opacity: 1;
+            //         }
+            //         &:before{
+            //             opacity: 0;
+            //         }
+            //     }
+            // }
         }
     }
     @media(max-width: 1439px){
