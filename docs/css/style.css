@@ -698,6 +698,9 @@ h6 {
   left: -26px !important;
   font-size: 15px !important;
   color: #FFFFFF !important;
+  width: 16px !important;
+  height: 16px !important;
+  background: #F57A17 !important;
 }
 
 .nf-field-element input {
