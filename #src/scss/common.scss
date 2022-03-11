@@ -357,6 +357,7 @@
 	}
 }
 .nf-form-fields-required{
+	display: none;
 	font-size: 18px!important;
 	font-weight: 700!important;
 	color: $black!important;
@@ -446,6 +447,7 @@
 .checkbox-wrap .nf-field-label label:before{
 	color: $orange!important;
 	cursor: pointer;
+	top: 1px!important;
 }
 
 .nf-after-form-content{

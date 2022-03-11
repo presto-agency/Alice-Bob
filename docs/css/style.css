@@ -666,6 +666,7 @@ h6 {
 }
 
 .nf-form-fields-required {
+  display: none;
   font-size: 18px !important;
   font-weight: 700 !important;
   color: #191919 !important;
@@ -780,6 +781,7 @@ h6 {
 .checkbox-wrap .nf-field-label label:before {
   color: #F57A17 !important;
   cursor: pointer;
+  top: 1px !important;
 }
 
 .nf-after-form-content {
