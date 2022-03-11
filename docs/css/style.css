@@ -812,6 +812,10 @@ h6 {
   text-decoration: underline !important;
 }
 
+.jBox-container {
+  border-radius: 20px !important;
+}
+
 .header {
   position: fixed;
   z-index: 10;
