@@ -31,7 +31,7 @@ const lottieInter = () => {
             {
                 visibility: [0, 0.7],
                 type: "seek",
-                frames: [0, 180],
+                frames: [0, 179],
             }
         ]
     });
